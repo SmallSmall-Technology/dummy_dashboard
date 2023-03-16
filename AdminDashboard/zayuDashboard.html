@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./zayuDashboard.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <title>ZAYU dashboard Admin Dashboard</title>
+</head>
+<body>
+ <div class="d-flex" id="wrapper">
+    <!-- <<<<< side bar starts here >>>>> -->
+
+    <div class="bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom text-success ">
+            <i class="bi bi-speedometer2 me-2 "></i>Users
+        </div>
+
+        <div class="list-group list-group-flush my-3">
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active  text-success fs-6">
+                <i class="bi bi-speedometer me-2 text-success  "></i>Dashboard
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold fs-6">
+                <i class="bi bi-cast me-2"></i>Projects
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text  fw-bold fs-6">
+                <i class="bi bi-bar-chart-line-fill me-2"></i>Analytics
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="bi bi-bookmark-star-fill me-2"></i>Reports
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="bi bi-bank2 me-2"></i>Store mgt
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="bi bi-chat-dots me-2"></i>Chat
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="bi bi-globe-central-south-asia me-2"></i>Outlets
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text text-danger fw-bold">
+                <i class="bi bi-box-arrow-left me-2"></i>Logout
+            </a>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- <<<<< side bar ends here >>>>> -->
+
+    <div id="page-content-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparet py-4 px-4">
+       
+        <div class="d-flex align-items-center>
+            <i class="bi bi-list fs-4 me-3" id="menu-toggle"></i> 
+            <h2 class="fs-3 m-0 fw-bold"><i class="bi bi-card-list me-2"></i>Dashboard</h2>
+
+        </div> 
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent"
+       aria-expanded="false" aria-label="Toggle-navigation">
+       <span class="navbar-toggler-icon me-2"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent ps-3">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li nav-item-dropdown>
+                <a href="#" class="nav-link dropdown-toggle second-text fw-bold " id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-lines-fill me-2"></i>John Doe
+                </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item"><i class="bi bi-person-bounding-box me-2"></i>Profile</a></li>
+                <li><a href="#" class="dropdown-item"><i class="bi bi-gear  me-2"></i>Settings</a></li>
+                <li><a href="#" class="dropdown-item"> <i class="bi bi-box-arrow-left me-2"></i>Logout </a></li>
+            </ul>
+            </li>
+        </ul>
+    </div> 
+
+
+    </nav>
+
+        <div class="container-fluid  px-4">
+            <div class="row g-3 my-2">
+
+                <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                    <div>
+                        <h3 class="fs-6">720</h3>
+                       <p class="fs-6">Products</p>
+
+                    </div>
+                    <i class="bi bi-gift-fill fs-3 primary-text border-rounded-full border border-light secondary-bg pg-3 text-success"></i>
+                </div>   
+
+            </div> 
+
+
+
+            <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                    <div>
+                        <h3 class="fs-6">17,420</h3>
+                       <p class="fs-6">Sales</p>
+
+                    </div>
+                    <i class="bi bi-receipt fs-3 primary-text border-rounded-full border border-light secondary-bg pg-3 text-success"></i>
+                </div>   
+
+            </div> 
+
+
+
+            <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                    <div>
+                        <h3 class="fs-6">6000</h3>
+                       <p class="fs-6">Delivery</p>
+
+                    </div>
+                    <i class="bi bi-truck fs-3 primary-text border-rounded-full border border-light secondary-bg pg-3 text-success"></i>
+                </div>   
+
+            </div> 
+
+
+
+            <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                    <div>
+                        <h3 class="fs-6">%35</h3>
+                       <p class="fs-6">Increase</p>
+
+                    </div>
+                    <i class="bi bi-graph-up-arrow fs-3 primary-text border-rounded-full border border-light secondary-bg pg-3 text-success"></i>
+                </div>   
+
+            </div> 
+
+        </div>
+
+
+        <div class="row my-5">
+            <h3 class="fs-4  mb-3">Recent Subscribers</h3>
+            <div class="col  bg-white">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>Mark</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <th scope="row">7</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">8</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <th scope="row">10</th>
+                          <td>Mark</td>
+                          <td>Tim</td>
+                          <td>Gee</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">11</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">12</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <th scope="row">13</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">14</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">15</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <th scope="row">16</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">17</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">18</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+<script>
+    // var el = document.getElementById("wrapper")
+    // var toggleButton = document.getElementById("menu-toggle")
+
+    // toggleButton.onclick = function(){
+    //     el.classList.toggle("toggled")
+    // }
+
+
+    const toggleBtn = document.getElementById('wrapper');
+    const pageContent = document.getElementById('menu-toggle');
+
+    toggleBtn.onclick('click', function() {
+    pageContent.classList.toggle('show');
+});
+
+</script>
+</body>
+</html>
